@@ -1,0 +1,19 @@
+modLoader="javafml" #mandatory
+loaderVersion="[30,)" #mandatory
+[[mods]] #mandatory
+modId="softsnowfallmod" #mandatory
+version="1.0.0" #mandatory
+displayName="Soft Snow Fall Mod" #mandatory
+displayURL="https://www.curseforge.com/minecraft/mc-mods/soft-snow-landing" #optional
+
+# A file name (in the root of the mod JAR) containing a logo for display
+logoFile="examplemod.png" #optional
+
+# A text field displayed in the mod UI
+authors="EndlesNights" #optional
+
+# The description text for the mod (multi line!) (#mandatory)
+description='''
+Fall on snow reducess the effective distance fallen based on the thickness of the snow blocks.
+
+'''
