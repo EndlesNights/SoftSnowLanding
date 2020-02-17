@@ -33,9 +33,7 @@ public class FallEvent
 		BlockPos playerPos = entity.getPosition();
 		Block block = worldIn.getBlockState(blockPos).getBlock();
 		int snowLayers = 0;
-		
-		System.out.println(playerPos);
-		
+				
 		//Check blockPos y+1 if it's a SnowBlock since they will not register as solid if layer is value of only one.		
 		if(worldIn.getBlockState(playerPos).getBlock() instanceof SnowBlock && playerPos != blockPos)
 		{
@@ -83,9 +81,7 @@ public class FallEvent
 			blockIndex++;
 			block = worldIn.getBlockState(blockPos.down(blockIndex)).getBlock();
 		}
-		
-		System.out.println("\n" + snowLayers);
-		
+				
 		event.setDistance(event.getDistance() - (snowLayers * SnowFallConfig.snowFall_ratio.get().floatValue()));
     }
 }
